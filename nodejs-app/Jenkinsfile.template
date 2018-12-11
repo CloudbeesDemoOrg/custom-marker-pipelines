@@ -36,10 +36,6 @@ pipeline {
          echo "TODO - build and push image"
          unstash 'app'
       }
-      post {
-        success {
-        }
-      }
     }
     stage('Deploy') {
       when {
